@@ -18,10 +18,12 @@ int main()
     sscanf(en_buyuk_str, "%lld", &en_buyuk);
 
    
-    for (i = 0; i < n; i++)
-        en_kucuk_str[i] = '1';
+     for (i = 0; i < n; i++)
+        en_kucuk_str[i] = '0';
+    en_kucuk_str[0] = '1';
     en_kucuk_str[n] = '\0';
     sscanf(en_kucuk_str, "%lld", &en_kucuk);
+    
 
     printf("%d basamakli en buyuk sayi: %lld\n", n, en_buyuk);
     printf("%d basamakli en kucuk sayi: %lld\n", n, en_kucuk);
